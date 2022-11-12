@@ -1,13 +1,141 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body #root,
+.app,
+.content {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  cursor: url("../src/assets/icons/cursor.svg"), auto;
+}
+img {
+  cursor: url("../src/assets/icons/cursor.svg"), auto;
+}
+.app {
+  display: flex;
+  position: relative;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-evenly;
+  width: 208px;
+  align-items: center;
+  transition: all 300ms ease;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.menu-item:hover {
+  cursor: url("../src/assets/icons/cursor.svg");
+}
+
+.active {
+  background-color: #f95d44;
+  border-radius: 8px;
+  color: white;
+}
+
+.menu-item:last-child {
+  background: black;
+}
+
+.card:hover {
+  border: 2px solid #1db385;
+}
+
+.card:hover .icon {
+  color: #1db385;
+}
+.card:hover .p {
+  color: black;
+}
+.card .icon {
+  font-size: 50px;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light {
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px rgba(50, 50, 71, 0.08),
+    0px 8px 16px rgba(50, 50, 71, 0.06);
+  height: 108px;
+  width: 133px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apexcharts-tooltip * {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5px;
+}
+
+.tooltip-img {
+  height: 61px;
+}
+
+.arrow_box:after,
+.arrow_box:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box:after {
+  border-color: rgba(85, 85, 85, 0);
+  border-right-color: #555;
+  border-width: 10px;
+  margin-top: -10px;
+}
+.arrow_box:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-right-color: #000000;
+  border-width: 13px;
+  margin-top: -13px;
+}
+/* #chart .apexcharts-tooltip {
+  color: #fff;
+  overflow: visible !important;
+  white-space: normal !important;
+}
+
+#chart .apexcharts-tooltip span {
+  padding: 5px 10px;
+  display: inline-block;
+} */
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  height: 100px;
+}
+.data p,
+.data h1 {
+  text-align: left;
+  padding: 0px;
+  margin: 0;
+}
+.data p {
+  color: #a0aec0;
 }

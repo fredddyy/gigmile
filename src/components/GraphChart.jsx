@@ -17,6 +17,9 @@ const GraphChart = () => {
     ],
 
     options: {
+      toolbar: {
+        show: false,
+      },
       chart: {
         type: "area",
         height: "auto",
@@ -72,7 +75,7 @@ const GraphChart = () => {
             '<div class="arrow-box">' +
             `<img class="tooltip-img" src=${bike} />` +
             "<div class='data'>" +
-            "<p>This Month</p>" +
+            "<p class='this-month'>This Month</p>" +
             `<h1>${series[seriesIndex][dataPointIndex]}</h1>` +
             `<p>${w.globals.labels[dataPointIndex]}</p>` +
             "</div>" +
@@ -81,7 +84,26 @@ const GraphChart = () => {
         },
       },
       grid: {
-        show: false,
+        borderColor: "#a0aec039",
+        strokeDashArray: 7,
+        xaxis: {
+          lines: {
+            show: false,
+          },
+        },
+        yaxis: {
+          lines: {
+            show: true,
+          },
+        },
+      },
+      annotations: {
+        yaxis: [
+          {
+            borderColor: "#000",
+            fillColor: "#FEB019",
+          },
+        ],
       },
       xaxis: {
         type: "string",
@@ -103,18 +125,16 @@ const GraphChart = () => {
       yaxis: {
         show: true,
       },
-      toolbar: {
-        show: false,
-      },
     },
   };
   return (
     <Box
       border="2px solid #E6E7E9"
-      margin="25px 0px"
+      margin="12.5px 0px"
       padding="20px 0px"
       borderRadius="6px"
       position="relative"
+      boxShadow="0px 3.5px 5.5px rgba(0, 0, 0, 0.02)"
     >
       <Typography
         fontSize="16px"

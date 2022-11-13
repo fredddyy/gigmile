@@ -31,8 +31,9 @@ const Topbar = () => {
 
         {/* ICONS */}
         <Box display="flex">
-          <IconButton></IconButton>
-          <img src={NoteIcon} alt="note-icon" />
+          <IconButton>
+            <img src={NoteIcon} alt="note-icon" />
+          </IconButton>
           <IconButton>
             <img src={Bell} alt="bell-icon" />
           </IconButton>

@@ -21,7 +21,7 @@ const Topbar = () => {
         <Box
           display="flex"
           backgroundColor="#FAFAFA"
-          boederRadius="3px"
+          borderRadius="3px"
           width="400px"
           height="40px"
         >

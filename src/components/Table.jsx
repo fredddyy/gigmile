@@ -111,8 +111,8 @@ const ServiceTable = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
-            <TableRow className="table-row" key={row.name} sx={{ border: 0 }}>
+          {rows.map((row, index) => (
+            <TableRow className="table-row" key={index} sx={{ border: 0 }}>
               <TableCell
                 className="table-cell"
                 sx={{

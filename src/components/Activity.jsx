@@ -42,7 +42,7 @@ const Activity = () => {
       </Box>
       {ActivityData.map((activity, index) => {
         return (
-          <Box display="flex" alignItems="flex-start" margin="20px">
+          <Box key={index} display="flex" alignItems="flex-start" margin="20px">
             <Box marginRight="8px">
               <img src={activity.img} alt="profile-img" />
             </Box>

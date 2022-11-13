@@ -6,9 +6,9 @@ import DashoardCard from "./Card";
 const Cards = () => {
   return (
     <Box display="flex" gap="10px">
-      {CardsData.map((card, id) => {
+      {CardsData.map((card) => {
         return (
-          <Box width="100%">
+          <Box key={card.title} width="100%">
             <DashoardCard title={card.title} num={card.num} icon={card.icon} />
           </Box>
         );

@@ -79,10 +79,10 @@ export const GeoTable = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.slice(0, 3).map((row) => (
+          {rows.slice(0, 3).map((row, index) => (
             <TableRow
               className="table-row"
-              key={row.name}
+              key={index}
               sx={{ "&:nt-child(3)": { coloe: "white" } }}
             >
               <TableCell
@@ -121,8 +121,8 @@ export const GeoTable = () => {
           ))}
         </TableBody>
         <TableBody>
-          {rows.slice(3, 4).map((row) => (
-            <TableRow className="table-row" key={row.name}>
+          {rows.slice(3, 4).map((row, index) => (
+            <TableRow key={index} className="table-row">
               <TableCell
                 className="table-cell"
                 sx={{
@@ -159,8 +159,8 @@ export const GeoTable = () => {
           ))}
         </TableBody>
         <TableBody>
-          {rows.slice(2, 3).map((row) => (
-            <TableRow className="table-row" key={row.name}>
+          {rows.slice(2, 3).map((row, index) => (
+            <TableRow key={index} className="table-row">
               <TableCell
                 className="table-cell"
                 sx={{

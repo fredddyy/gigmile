@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+/* GENERAL STYLES
+----------------
+----------------- */
 * {
   padding: 0;
   margin: 0;
@@ -36,6 +39,9 @@ img {
   background-color: #7c7c7c0e;
 }
 
+/* SIDEBAR MENU ITEMS 
+----------------------
+----------------------*/
 .menu-item {
   display: flex;
   align-items: center;
@@ -69,6 +75,9 @@ img {
   background-color: #f95d44;
 }
 
+/* DASHBOARD TOP CARDS 
+----------------------
+----------------------*/
 .card:hover {
   border: 2px solid #1db385;
   cursor: url("../src/assets/icons/cursor.svg"), auto;
@@ -84,6 +93,9 @@ img {
   font-size: 50px;
 }
 
+/* GRAPH CHART TOOLTIP 
+----------------------
+ --------------------- */
 .apexcharts-tooltip.apexcharts-theme-light {
   border: 1px solid white;
   border-radius: 20px;
@@ -113,16 +125,6 @@ img {
   height: 61px;
 }
 
-/* #chart .apexcharts-tooltip {
-  color: #fff;
-  overflow: visible !important;
-  white-space: normal !important;
-}
-
-#chart .apexcharts-tooltip span {
-  padding: 5px 10px;
-  display: inline-block;
-} */
 .data {
   display: flex;
   flex-direction: column;
@@ -139,3 +141,5 @@ img {
 .data p {
   color: #a0aec0;
 }
+
+/* 🤣 HOPE I MAKE IT TO THE NEXT ROUND 🤞 😇  */

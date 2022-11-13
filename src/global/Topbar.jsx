@@ -12,7 +12,9 @@ const Topbar = () => {
   return (
     <Box display="flex" justifyContent="space-between" p={2}>
       <Box>
-        <Typography>Hello Michael! 👋🏽</Typography>
+        <Typography fontWeight="600" fontSize="16px" lineHeight="19px">
+          Hello Michael! 👋🏽
+        </Typography>
       </Box>
       <Box display="flex">
         {/* SEARCH BAR */}
